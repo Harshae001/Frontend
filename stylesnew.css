@@ -1,0 +1,53 @@
+
+form
+{
+    text-align: right;
+}
+
+img
+{
+   
+    width: 190px;
+    height: 200px;
+    border-radius: 30%;
+   position: absolute;
+   top: 10%;
+   left:40%;
+
+}
+
+input{
+
+   
+
+    width: 10%;
+    padding: 10px;
+    background-color: #eef4f9;
+    color: #1b1616;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+  table{
+    position: relative;
+    margin-top:20%;
+    left:40%;
+    
+  }
+
+  body{
+   background-image: url("C:\\Users\\harsha.e\\Downloads\\23833.jpg");
+    
+  }
+
+  td{
+    color: #fff;
+
+  } 
+
+  td:hover{
+    background-color: gray;
+  }
+
+ 

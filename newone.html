@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Academy of Technology</title>
+    <style>
+        /* General styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header, footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        main {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Home Page styles */
+        .about-section {
+            margin-bottom: 20px;
+        }
+
+        /* Branches Page styles */
+        .branches-section {
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+
+        /* Contact Page styles */
+        .contact-section {
+            margin-bottom: 20px;
+        }
+        address {
+            margin-top: 20px;
+            font-style: normal;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Global Academy of Technology</h1>
+    </header>
+
+    <!-- Container for content -->
+    <div class="container">
+        <!-- Main content -->
+        <main>
+            <!-- Home Page -->
+            <section class="about-section">
+                <h2>About Us</h2>
+                <p>Founded by John Doe in 1990, Global Academy of Technology is a renowned institution...</p>
+                <!-- Add more aspects here -->
+
+                <!-- Link to Branches Page -->
+                <p><a href="#" onclick="showPage('branches')">View Engineering Branches</a></p>
+            </section>
+
+            <!-- Branches Page -->
+            <section class="branches-section" style="display: none;">
+                <h2>Engineering Branches</h2>
+                <ul>
+                    <li><a href="#">Computer Science and Engineering</a></li>
+                    <li><a href="#">Electronics and Communication Engineering</a></li>
+                    <li><a href="#">Mechanical Engineering</a></li>
+                    <li><a href="#">Civil Engineering</a></li>
+                    <li><a href="#">Electrical and Electronics Engineering</a></li>
+                    <li><a href="#">Information Science and Engineering</a></li>
+                </ul>
+                <!-- Link to Home Page -->
+                <p><a href="#" onclick="showPage('about')">Back to Home</a></p>
+            </section>
+
+            <!-- Contact Page -->
+            <section class="contact-section" style="display: none;">
+                <h2>Contact Us</h2>
+                <address>
+                    <p>Global Academy of Technology</p>
+                    <p>Address: 123 Main Street, City, Country</p>
+                    <p>Phone: +1 (123) 456-7890</p>
+                    <p>Email: info@globaltech.edu</p>
+                </address>
+            </section>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Global Academy of Technology</p>
+    </footer>
+
+    <!-- JavaScript to toggle between pages -->
+    <script>
+        function showPage(pageId) {
+            // Hide all sections
+            document.querySelectorAll('section').forEach(section => {
+                section.style.display = 'none';
+            });
+
+            // Show selected section
+            document.querySelector(`.${pageId}-section`).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
